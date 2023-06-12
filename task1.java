@@ -1,10 +1,23 @@
 // Задание
+// Example 1:
+// Input: s = "the sky is blue"
+// Output: "blue is sky the"
 
-// 1) Вычислить n-ое треугольного число (сумма чисел от 1 до n), n! (произведение чисел от 1 до n)
-// 2) Вывести все простые числа от 1 до 1000
-// 3) Реализовать простой калькулятор
-// 4) (дополнительное задание) Задано уравнение вида q + w = e, q, w, e >= 0. 
-// Некоторые цифры могут быть заменены знаком вопроса, например, 2? + ?5 = 69. 
-// Требуется восстановить выражение до верного равенства. 
-// Предложить хотя бы одно решение или сообщить, что его нет.
+import java.util.Scanner;
+import java.util.Arrays;
+import java.util.Collections;
 
+public class Task1 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String s = sc.nextLine();
+        String[] se = s.split(" ");
+        Collections.reverse(Arrays.asList(se));
+        System.out.println(Arrays.toString(se));
+    }
+}
+/**
+ * @apiNote - Реверсия строки
+ * @param - Введённая строка в терминал
+ * @return - Реверсия строки в виде массива
+ */
